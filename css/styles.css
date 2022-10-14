@@ -8,6 +8,10 @@
   --footer-text-semi-transparent-color: rgba(255, 255, 255, 0.6);
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--main-white-color);
@@ -89,6 +93,15 @@ ol {
   padding-left: 0;
 }
 
+.footer-phisical-address:hover,
+.footer-contacts:hover,
+.footer-contacts:focus,
+.main-nav-contacts:hover,
+.main-nav-contacts:focus {
+  color: var(--accent-color);
+  --color3: var(--accent-color);
+}
+
 /* HEADER */
 
 .header {
@@ -145,12 +158,16 @@ ol {
 }
 
 .auth-nav {
-  display: flex;
+  display: inline-flex;
   margin-left: auto;
 }
 
 .auth-nav .item + .item {
   margin-left: 50px;
+}
+
+.main-nav-contacts-icon {
+  margin-right: 10px;
 }
 
 /* HERO */
@@ -160,6 +177,20 @@ ol {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/Шапка.jpg");
+
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-slogan {
@@ -188,7 +219,12 @@ ol {
   padding-top: 94px;
 }
 
-.services {
+.clients {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.services .clients {
   padding-bottom: 94px;
 }
 
@@ -208,6 +244,8 @@ ol {
   margin-bottom: 10px;
 }
 
+/* our advantages */
+
 .advantages {
   display: flex;
   justify-content: space-between;
@@ -223,6 +261,18 @@ ol {
   letter-spacing: 0.03em;
   color: var(--main-grey-color);
 }
+
+.thumb {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(245, 244, 250, 1);
+}
+
+/* WHAT WE DO */
 
 .we-do {
   display: flex;
@@ -263,20 +313,73 @@ ol {
   padding-bottom: 30px;
 }
 
-/* FOOTER */
-
-.footer-phisical-address:hover,
-.footer-contacts:hover,
-.footer-contacts:focus,
-.main-nav-contacts:hover,
-.main-nav-contacts:focus {
-  color: var(--accent-color);
+.thumb-team {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+  height: 44px;
+  margin: auto;
 }
+
+.team-link-icon {
+  line-height: 0.6;
+}
+
+.team-link-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    --color4: rgba(175, 177, 184, 1);
+}
+
+.team-link-icon:hover,
+.team-link-icon:focus {
+  background-color: var(--accent-color);
+  --color4: var(--main-white-color);
+}
+
+.team-item {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* OUR CLIENTS */
+
+.our-clients {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  height: 92px;
+}
+
+.clients-link-icon {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(175, 177, 184, 1);
+  --color4: rgba(175, 177, 184, 1);
+}
+
+.clients-link-icon:focus,
+.clients-link-icon:hover {
+  border-color: var(--accent-color);
+  --color4: var(--accent-color);
+}
+
+/* FOOTER */
 
 .footer-section {
   background-color: var(--dark-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  display: flex;
 }
 
 .footer-phisical-address {
@@ -318,6 +421,53 @@ ol {
   color: var(--accent-color);
 }
 
+.footer-slogan {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+  margin-bottom: 20px;
+}
+
+.thumb-footer {
+  display: flex;
+  gap: 10px;
+  width: 206px;
+  height: 44px;
+}
+
+.link-icon {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  line-height: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --color4: var(--main-white-color);
+}
+
+.link-icon:hover,
+.link-icon:focus {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.footer-total {
+  display: flex;
+}
+
+.footer-contacts-icon {
+  margin-left: 70px;
+  align-items: baseline;
+  padding-top: 12px;
+}
+
+
 /* -=-=-=-=-=-=- Portfolio CSS -=-=-=-=-=-=- */
 
 .portfolio {
@@ -349,10 +499,12 @@ ol {
 .portfolio-filters-button:hover {
   background-color: var(--accent-color);
   color: var(--main-white-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .project {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .client-project-name {
@@ -368,7 +520,6 @@ ol {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-grey-color);
-  margin-bottom: 20px;
 }
 
 .portfolio-list {
@@ -380,9 +531,15 @@ ol {
 .portfolio-list-content {
   width: 370px;
   height: 404px;
-  border: 1px solid #eeeeee;
+}
+
+a.img:focus,
+.portfolio-list-content:hover,
+.portfolio-list-content:focus {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .address {
   font-style: normal;
 }
+
