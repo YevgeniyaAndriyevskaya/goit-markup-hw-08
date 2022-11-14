@@ -1,0 +1,31 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages .advantages__item {
+  width: 270px;
+}
+
+.advantages__title {
+  @include font(14px, 1.14, null, 0.03em);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-grey-color);
+}
+
+.advantages__thumb {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  @extend %flex;
+  justify-content: center;
+    background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+}
