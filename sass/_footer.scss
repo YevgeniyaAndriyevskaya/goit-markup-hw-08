@@ -8,12 +8,13 @@
 
 .footer__total {
   display: flex;
+
   @media screen and (max-width: 1200px) {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     column-gap: 156px;
   }
 }
@@ -90,6 +91,9 @@
   color: var(--main-white-color);
   margin-bottom: 20px;
   width: 100%;
+  // @media screen and (min-width: 1200px) {
+  //   text-align: left;
+  // }
 }
 
 .footer-thumb {

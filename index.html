@@ -24,7 +24,7 @@
   <body>
     <!-- header header header header header header header header -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a href="./index.html" lang="en" class="logo navigation__logo"
@@ -42,7 +42,7 @@
             </li>
           </ul>
         </nav>
-        <div class="conteiner header__connect">
+        <div class="header__connect">
           <ul class="connect list">
             <li class="connect__item">
               <a href="mailto:info@devstudio.com" class="connect__contacts">
@@ -57,20 +57,103 @@
                 <svg class="connect__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
-                +38 096 111 11 11</a
+                +1 212-772-4150</a
               >
             </li>
           </ul>
         </div>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-open__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="mob-menu__close" data-menu-close>
+              <svg class="mob-menu__icon" width="19" height="19">
+                <use href="./images/icons.svg#icon-сlose"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-list__item">
+                <a href="./index.html" class="mob-menu-list__link">Студія</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a href="./portfolio.html" class="mob-menu-list__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a href="#" class="mob-menu-list__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-connect">
+              <ul class="mob-connect__list list">
+                <li class="mob-connect__item">
+                  <a href="tel:+380961111111" class="mob-connect__tel">
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mob-connect__item">
+                  <a href="mailto:info@devstudio.com" class="mob-connect__mail">
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="soc__list list">
+              <li class="soc__item">
+                <a
+                  class="soc__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram
+                </a>
+              </li>
+              <li class="soc__item">
+                <a
+                  class="soc__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="soc__item">
+                <a
+                  class="soc__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="soc__item">
+                <a
+                  class="soc__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Linkedin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- main main main main main main main main main main -->
 
-    <!-- <main> -->
-    <!-- hero hero hero hero hero hero hero hero hero hero  -->
+    <main>
+      <!-- hero hero hero hero hero hero hero hero hero hero  -->
 
-    <section class="hero">
+      <section class="hero">
         <h1 class="hero__slogan">
           Ефективні рішення для <br />
           вашого бізнесу
@@ -80,66 +163,66 @@
         </button>
       </section>
 
-    <!-- advantages advantages advantages advantages  -->
+      <!-- advantages advantages advantages advantages  -->
 
-    <!-- <section class="section about">
-      <div class="container about__container">
-        <h2 class="hidden">Наші переваги</h2>
-        <ul class="advantages list">
-          <li class="advantages__item">
-            <div class="advantages__thumb">
-              <svg class="advantages__icon" width="70" height="70">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
-            </div>
-            <h3 class="advantages__title">Увагa до деталей</h3>
-            <p class="advantages__description">
-              Ідейні міркування, і навіть початок повсякденної роботи з
-              формування позиції.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__thumb">
-              <svg class="advantages__icon" width="70" height="70">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
-            </div>
-            <h3 class="advantages__title">Пунктуальність</h3>
-            <p class="advantages__description">
-              Завдання організації, особливо рамки і місце навчання кадрів тягне
-              у себе.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__thumb">
-              <svg class="advantages__icon" width="70" height="70">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
-            </div>
-            <h3 class="advantages__title">Планування</h3>
-            <p class="advantages__description">
-              Так само консультація з широким активом значною мірою зумовлює.
-            </p>
-          </li>
-          <li class="advantages__item">
-            <div class="advantages__thumb">
-              <svg class="advantages__icon" width="70" height="70">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
-            </div>
-            <h3 class="advantages__title">Сучасні технології</h3>
-            <p class="advantages__description">
-              Значимість цих проблем настільки очевидна, що реалізація планових
-              завдань.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section> -->
+      <section class="section about">
+        <div class="container about__container">
+          <h2 class="hidden">Наші переваги</h2>
+          <ul class="advantages list">
+            <li class="advantages__item">
+              <div class="advantages__thumb">
+                <svg class="advantages__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="advantages__title">Увагa до деталей</h3>
+              <p class="advantages__description">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__thumb">
+                <svg class="advantages__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="advantages__title">Пунктуальність</h3>
+              <p class="advantages__description">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__thumb">
+                <svg class="advantages__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="advantages__title">Планування</h3>
+              <p class="advantages__description">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__thumb">
+                <svg class="advantages__icon" width="70" height="70">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="advantages__title">Сучасні технології</h3>
+              <p class="advantages__description">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-    <!-- services services services services services -->
+      <!-- services services services services services -->
 
-    <!-- <section class="services">
+      <section class="services">
         <div class="container services__container">
           <h2 class="services__title">Чим ми займаємося</h2>
           <ul class="projects list">
@@ -172,22 +255,45 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-    <!-- team team team team team team team team team team  -->
+      <!-- team team team team team team team team team team  -->
 
-    <!-- <section class="our-team">
+      <section class="our-team">
         <div class="container our-team__container">
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/employee1.jpg"
-                alt="фото менеджера"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_des/employee1.jpg    1x,
+                    ./images/team_des/employee1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_tab/employee1-tab.jpg    1x,
+                    ./images/team_tab/employee1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_mob/employee1-mob.jpg    1x,
+                    ./images/team_mob/employee1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/team_mob/employee1-mob.jpg"
+                  alt="фото менеджера"
+                  width="450"
+                  height="260"
+                />
+              </picture>
               <div class="team__member">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -232,13 +338,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/employee2.jpg"
-                alt="фото менеджера"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_des/employee2.jpg    1x,
+                    ./images/team_des/employee2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_tab/employee2-tab.jpg    1x,
+                    ./images/team_tab/employee2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_mob/employee2-mob.jpg    1x,
+                    ./images/team_mob/employee2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/team_mob/employee2-mob.jpg"
+                  alt="фото менеджера"
+                  width="450"
+                  height="260"
+                />
+              </picture>
               <div class="team__member">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -283,13 +412,36 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/employee3.jpg"
-                alt="фото менеджера"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_des/employee3.jpg    1x,
+                    ./images/team_des/employee3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_tab/employee3-tab.jpg    1x,
+                    ./images/team_tab/employee3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_mob/employee3-mob.jpg    1x,
+                    ./images/team_mob/employee3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/team_mob/employee3-mob.jpg"
+                  alt="фото менеджера"
+                  width="450"
+                  height="260"
+                />
+              </picture>
               <div class="team__member">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -334,13 +486,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__image"
-                src="./images/employee4.jpg"
-                alt="фото менеджера"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_des/employee4.jpg    1x,
+                    ./images/team_des/employee4-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_tab/employee4-tab.jpg    1x,
+                    ./images/team_tab/employee4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team_mob/employee4-mob.jpg    1x,
+                    ./images/team_mob/employee4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team__image"
+                  src="./images/team_mob/employee4-mob.jpg"
+                  alt="фото менеджера"
+                  width="450"
+                  height="260"
+                />
+              </picture>
+
               <div class="team__member">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -386,11 +562,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-    <!-- clients clients clients clients clients clients clients -->
+      <!-- clients clients clients clients clients clients clients -->
 
-    <!-- <section class="clients">
+      <section class="clients">
         <div class="container clients__container">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list list">
@@ -451,11 +627,11 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- footer footer footer footer footer footer footer footer  -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__total container">
         <div class="footer__address-box">
           <a href="./index.html" lang="en" class="logo footer__logo"
@@ -529,7 +705,7 @@
 
         <!-- form form form form form form form form form form -->
 
-        <!-- <form class="footer-form">
+        <form class="footer-form">
           <label class="footer-form__label">
             Підпишіться на розсилку
             <input
@@ -547,11 +723,12 @@
           </button>
         </form>
       </div>
-    </footer> --> -->
+    </footer>
+    -->
 
     <!-- modal modal modal modal modal modal modal modal modal -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__button-close" data-modal-close>
           <svg class="modal__button-icon" width="11" height="11">
@@ -629,6 +806,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

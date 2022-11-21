@@ -12,4 +12,7 @@
 </symbol><symbol id="icon-check" viewBox="0 0 65 50">
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1" d="M9.785 23.76l-0.345-0.33-0.345 0.325-4.82 4.57 0.38 0.365 17.825 17 0.345-0.33 37.9-36.155-0.38-0.36-4.755-4.535-0.345 0.33-32.765 31.23-12.695-12.11z"></path>
 </symbol>
+<symbol id="icon-menu" viewBox="0 0 75 50">
+<path d="M0 8.333v-8.333h75v8.333h-75zM0 29.167h75v-8.333h-75v8.333zM0 50h75v-8.333h-75v8.333z"></path>
+</symbol>
 </defs></svg>
