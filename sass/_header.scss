@@ -135,6 +135,10 @@
   }
 }
 
+.mob-menu__icon:focus {
+  color: var(--accent-color);
+}
+
 .mob-menu-top {
   margin-bottom: 20px;
 }
@@ -156,6 +160,9 @@
 .mob-menu-list__link {
   @include font(40px, 1.18, 500, 0.02em);
   color: #212121;
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .mob-connect__list {

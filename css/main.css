@@ -287,6 +287,10 @@ body {
   overflow: auto;
 }
 
+.mob-menu__icon:focus {
+  color: var(--accent-color);
+}
+
 .mob-menu-top {
   margin-bottom: 20px;
 }
@@ -313,6 +317,9 @@ body {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.mob-menu-list__link:focus {
+  color: var(--accent-color);
 }
 
 .mob-connect__list {
