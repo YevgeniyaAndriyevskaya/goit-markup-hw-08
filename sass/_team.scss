@@ -9,9 +9,13 @@
 }
 
 .our-team__title {
-  @include font(36px, 1.17, null, 0.03em);
-  margin-bottom: 50px;
+  @include font(28px, 1.17, null, 0.03em);
+  margin-bottom: 30px;
   text-align: center;
+   @media screen and (min-width: 1200px) {
+     @include font(36px, 1.17, null, 0.03em);
+  margin-bottom: 50px;
+  }
 }
 
 .team {
